@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="calci.css">
+    <script src="calci.js"></script>
+
+    <title>My Calci</title>
+</head>
+
+<body id="kl">
+
+
+
+    <div id="kp">
+
+
+        <input type="text" id="ks" value="00" onclick="">
+
+        <p id="ke">
+            <input class="c1 c2" id="id1" type="button" value="AC">
+            <input class="c1 c3" id="id2" type="button" value="**">
+            <input class="c1 c3" id="id3" type="button" value="/">
+            <input class="c1 c3" id="id4" type="button" value="DEL">
+            <input class="c1 c5" id="id5" type="button" value="9">
+            <input class="c1 c5" id="id6" type="button" value="8">
+            <input class="c1 c5" id="id7" type="button" value="7">
+            <input class="c1 c3" id="id8" type="button" value="*">
+            <input class="c1 c5" id="id9" type="button" value="6">
+            <input class="c1 c5" id="id10" type="button" value="5">
+            <input class="c1 c5" id="id11" type="button" value="4">
+            <input class="c1 c3" id="id12" type="button" value="+">
+            <input class="c1 c5" id="id13" type="button" value="3">
+            <input class="c1 c5" id="id14" type="button" value="2">
+            <input class="c1 c5" id="id15" type="button" value="1">
+            <input class="c1 c3" id="id16" type="button" value="-">
+            <input class="c1 c5" id="id17" type="button" value="0">
+            <input class="c1 c5" id="id18" type="button" value=".">
+            <input class="c1 c4" id="id19" type="button" value="Ans">
+            <input class="c1 c3" id="id20" type="button" value="%">
+
+        </p>
+
+    </div>
+
+
+
+
+</body>
+
+<script>
+let v1 = document.querySelector('#id1');
+let v2 = document.querySelector('#id2');
+let v3 = document.querySelector('#id3');
+let v4 = document.querySelector('#id4');
+let v5 = document.querySelector('#id5');
+let v6 = document.querySelector('#id6');
+let v7 = document.querySelector('#id7');
+let v8 = document.querySelector('#id8');
+let v9 = document.querySelector('#id9');
+let v10 = document.querySelector('#id10');
+let v11 = document.querySelector('#id11');
+let v12 = document.querySelector('#id12');
+let v13 = document.querySelector('#id13');
+let v14 = document.querySelector('#id14');
+let v15 = document.querySelector('#id15');
+let v16 = document.querySelector('#id16');
+let v17 = document.querySelector('#id17');
+let v18 = document.querySelector('#id18');
+let v19 = document.querySelector('#id19');
+let v20 = document.querySelector('#id20');
+let vks = document.querySelector('#ks');
+
+v1.addEventListener('click',function ac() {
+    vks.value = ""; 
+});
+
+v2.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "**";    
+});
+
+v3.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "/";    
+});
+
+v4.addEventListener('click',function del() {
+    let oldval = vks.value;
+    vks.value = oldval.slice(0,(oldval.length-1));
+});
+
+v5.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "9";    
+});
+
+v6.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "8";    
+});
+
+v7.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "7";    
+});
+
+v8.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "*";    
+});
+
+v9.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "6";    
+});
+
+v10.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "5";    
+});
+
+v11.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "4";    
+});
+
+v12.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "+";    
+});
+
+v13.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "3";    
+});
+
+v14.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "2";    
+});
+
+v15.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "1";    
+});
+
+v16.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "-";    
+});
+
+v17.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "0";    
+});
+
+v18.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + ".";    
+});
+
+v19.addEventListener('click',function ans() {
+
+    vks.value = eval(vks.value);
+});
+
+v20.addEventListener('click',function w1() {
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + "%";    
+});
+
+
+function write(nex)
+{
+    let oldval1 = document.querySelector('#ks').value;
+    vks.value = oldval1 + nex;
+}
+
+
+
+</script>
+
+</html>
